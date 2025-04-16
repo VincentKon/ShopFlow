@@ -1,6 +1,5 @@
 import React from "react";
 import { Billboard as BillboardType } from "@/types";
-import Image from "next/image";
 
 interface BillboardProps {
   data: BillboardType;

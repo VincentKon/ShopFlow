@@ -10,5 +10,6 @@ export const formatter = new Intl.NumberFormat("en-US", {
   currency: "USD",
 });
 
-export const toNumber = (decimal: any): number =>
-  parseFloat(decimal?.toString());
+export const toNumber = (decimal: unknown): number => {
+  return parseFloat(decimal?.toString?.() ?? "NaN");
+};
